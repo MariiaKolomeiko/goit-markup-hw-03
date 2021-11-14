@@ -9,32 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./css/style.css" rel="stylesheet"/>
 </head>
 <body>
-    <header class="header">
-        <a class="link logo" lang="en" href="/">Web<span class="logo-part">Studio</span> </a>
+<header class="header">
+    <div class="container header-container">
         <nav class="header-nav">
+            <a class="link logo" lang="en" href="/">Web<span class="logo-part">Studio</span> </a>
             <ul class="list header-list">
-                <li><a class="link header-link" href="./index.html">Студия</a> </li>
-                <li><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link header-link" href="">Контакты</a></li>
+                <li class="header-item"><a class="link header-link" href="./index.html">Студия</a> </li>
+                <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
+                <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
             </ul>
         </nav>
         <ul class="list header-contacts">
-            <li><a class="link header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link header-link" href="telto:+380961111111">+38 096 111 11 11</a></li>
+            <li class="header-contact-item"><a class="link header-link"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="header-contact-item"><a class="link header-link" href="telto:+380961111111">+38 096 111 11 11</a>
+            </li>
         </ul>
-    </header>
+    </div>
     <main>
         <section class="filter">
+            <div class="container">
             <h2 hidden>Портфолио</h2>
             <ul class="list filter-list">
-                <li> <button type="button" class="filter-button">Все</button></li>
-                <li> <button type="button" class="filter-button">Веб-сайты</button></li>
-                <li> <button type="button" class="filter-button">Приложения</button></li>
-                <li> <button type="button" class="filter-button">Дизайн</button></li>
-                <li> <button type="button" class="filter-button">Маркетинг</button></li>
+                <li> <button type="button" class="button filter-button">Все</button></li>
+                <li> <button type="button" class="button filter-button">Веб-сайты</button></li>
+                <li> <button type="button" class="button filter-button">Приложения</button></li>
+                <li> <button type="button" class="button filter-button">Дизайн</button></li>
+                <li> <button type="button" class="button filter-button">Маркетинг</button></li>
             </ul>
             <ul class="list gallery-list">
                 <li>
@@ -83,9 +90,11 @@
                 <p class="gallery-text">Приложение</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
+        <div class="container">
         <a class="link logo" lang="en" href="/">Web<span class="footer-logo-part">Studio</span></a>
         <address>
             <ul class="list footer-contacts">
@@ -95,6 +104,7 @@
                 <li><a class="link footer-link" href="telto:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>
