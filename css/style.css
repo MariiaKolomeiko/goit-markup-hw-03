@@ -24,6 +24,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .list {
   list-style: none;
@@ -40,12 +44,11 @@ ul {
   margin: 0 auto;
 }
 /* --------------------Header----------------------*/
-.header {
+.header-container {
   padding-top: 24px;
   padding-bottom: 25px;
-}
-.header-container {
   display: flex;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   font-family: Raleway;
@@ -261,6 +264,16 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"]
 }
 
 /* ------------------------------------------------Portfolio page--------------------------------------------------------- */
+.filter-container {
+  padding: 0 15px;
+}
+.filter-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
 .filter-button {
   font-family: inherit;
   font-weight: 500;
@@ -271,13 +284,31 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"]
   color: var(--logo-black-color);
   background-color: var(--background-color);
   cursor: pointer;
+  border: none;
+  margin-left: 8px;
 }
 .filter-button:hover,
 .filter-button:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
-
+.gallery-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gallery-card {
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.gallery-card:nth-last-child(3n) {
+  margin-left: -30px;
+}
+.gallery-textcard {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
 .gallery-title {
   font-weight: 700;
   font-size: 18px;
@@ -291,4 +322,7 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"]
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+img {
+  display: block;
 }
