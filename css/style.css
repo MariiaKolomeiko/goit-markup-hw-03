@@ -24,10 +24,10 @@ ul {
   margin: 0;
   padding: 0;
 }
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 .list {
   list-style: none;
@@ -107,10 +107,8 @@ ul {
 }
 
 /*-------------------- Hero--------------------- */
-.hero {
+.hero-section {
   background-color: #2f303a;
-}
-.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -124,6 +122,8 @@ ul {
   color: var(--main-white-color);
   margin: 0 auto;
   margin-bottom: 30px;
+  width: 696px;
+  height: 120px;
 }
 
 .button {
@@ -147,16 +147,21 @@ ul {
 }
 
 /*---------------------- Rules --------------------*/
+.rules-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .rules-container {
   display: flex;
-  padding-top: 137px;
-  padding-bottom: 103px;
 }
 .rules-list {
   display: flex;
 }
 .rules-item:not(:first-child) {
   margin-left: 30px;
+}
+.rules-item {
+  flex-basis: 270px;
 }
 .rules-title {
   font-weight: 700;
@@ -176,8 +181,8 @@ ul {
 }
 
 /* -------------------Work------------------ */
-.work-container {
-  margin-bottom: 94px;
+.work-section {
+  padding-bottom: 94px;
 }
 .title {
   font-weight: 700;
@@ -197,7 +202,7 @@ ul {
 }
 
 /* ----------------Team----------------- */
-.team-container {
+.team-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -219,6 +224,11 @@ ul {
 .team-img {
   margin-bottom: 30px;
 }
+.team-text-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-text {
   font-size: 16px;
   line-height: 1.19;
@@ -229,8 +239,6 @@ ul {
 /* -----------Footer------------- */
 .footer {
   background-color: #2f303a;
-}
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -264,6 +272,10 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"]
 }
 
 /* ------------------------------------------------Portfolio page--------------------------------------------------------- */
+.filter-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .filter-container {
   padding: 0 15px;
 }
@@ -271,7 +283,7 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"]
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter-button {
@@ -296,15 +308,15 @@ a[href="https://goo.gl/maps/4tGbcDuvCBDR5g7U7"]
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .gallery-card {
   margin-left: 30px;
   margin-top: 30px;
   padding-bottom: 20px;
 }
-.gallery-card:nth-last-child(3n) {
-  margin-left: -30px;
-}
+
 .gallery-textcard {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
