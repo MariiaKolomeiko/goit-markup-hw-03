@@ -160,12 +160,15 @@ ul {
 .rules-list {
   display: flex;
 }
+
 .rules-item:not(:first-child) {
   margin-left: 30px;
 }
+
 .rules-item {
   flex-basis: 270px;
 }
+
 .rules-title {
   font-weight: 700;
   font-size: 14px;
